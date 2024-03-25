@@ -1,0 +1,124 @@
+.searchside-logo {
+  width: 20%;
+}
+.searchside-main-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.searchside-main-text {
+  width: 45%;
+  font-weight: 250;
+  color: gray;
+  margin-bottom: 10vh;
+}
+.searchside-seachbar-text {
+  font-weight: 250;
+  color: gray;
+  margin-bottom: 6px;
+}
+.searchside-searchdiv {
+  margin-bottom: 15vh;
+}
+.searchside-seachbar {
+  width: 50%;
+  border: 12px solid white;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  border-radius: 6px;
+}
+.searchside-seachbar:focus {
+  outline: none;
+}
+.searchbar-button {
+  position: relative;
+  right: 5.2rem;
+  background-color: rgb(0, 104, 55);
+  border-radius: 0.6rem;
+  border: 0;
+  padding: 0.45rem 0.95rem;
+}
+.searchbar-button:hover {
+  cursor: pointer;
+}
+.searchbar-button span {
+  font-size: medium;
+  color: rgba(255, 255, 255, 0.7);
+}
+.searchside-bottom-text {
+  font-weight: 350;
+  color: gray;
+  margin: 5px;
+}
+.searchbar-helper-text {
+    margin: 0;
+    color: red;
+    font-weight: 350;
+    font-size: 1.1rem;
+  }
+@media (max-width: 768px) {
+  .searchside-logo {
+    width:50vw;
+  }
+  .searchside-main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+  .searchside-main-text {
+    width: 100%;
+  }
+  .searchbar-inner-div
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.searchside-seachbar
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+  .searchside-bottom-text {
+    font-weight: 350;
+    font-size: 1.1rem;
+    color: gray;
+    margin: 5px;
+  }
+  .searchbar-button
+  {
+    padding: 0 15px;
+  }
+  .searchside-seachbar-text {
+    font-size: 1.1rem;
+    font-weight: 250;
+    color: gray;
+    margin-bottom: 6px;
+  }
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .searchside-bottom-text {
+        font-weight: 350;
+        font-size: 1.1rem;
+        color: gray;
+        margin: 5px;
+      }
+      .searchside-seachbar-text {
+        font-size: 1.1rem;
+        font-weight: 250;
+        color: gray;
+        margin-bottom: 6px;
+      }
+      .searchside-main-text
+      {
+        width: 80%;
+      }
+}

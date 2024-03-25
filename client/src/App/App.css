@@ -1,0 +1,46 @@
+body
+{
+    margin: 0;
+    font-family: "Heebo", sans-serif;
+}
+#app-main-div
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: #EEE;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#app-searchside-div
+{
+    width: 45%;
+    height: 90%;
+    display: flex;
+}
+#app-weather-div
+{
+    width: 45%;
+    height: 90%;
+    background-color: #DADADA;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 768px) {
+  #app-main-div
+  {
+    flex-direction: column;
+    min-height: 200vh;
+  }
+  #app-searchside-div
+  {
+    width: 100%;
+  }
+  #app-weather-div
+  {
+    width: 100%;
+  }
+  }
