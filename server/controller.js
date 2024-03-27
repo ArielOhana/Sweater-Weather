@@ -50,3 +50,18 @@ exports.getWeather = async (req, res) => {
     res.status(400).json("Something went wrong, please try again");
   }
 };
+
+exports.stayActive = async (req, res) => {
+  try{
+    const currentTime = new Date().toLocaleTimeString(); 
+    console.log( currentTime, ": server is active");
+    res.status(200).json(`${currentTime} : server is active`);
+  }
+  catch(err)
+  {
+    console.error(err.message);
+    res.status(400).json("Something went wrong, please try again");
+  }
+}
+
+ 

@@ -18,6 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors(corsOptions));
 
 app.get("/weather/:city", Controller.getWeather);
+app.get("/stayactive", Controller.stayActive);
 
 app.listen(port, () => {
   console.log(`server runs on port ${port}`);
