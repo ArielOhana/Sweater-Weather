@@ -63,5 +63,3 @@ exports.stayActive = async (req, res) => {
     res.status(400).json("Something went wrong, please try again");
   }
 }
-
- 
