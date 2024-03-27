@@ -7,7 +7,7 @@ const dotenv = require("dotenv");
 dotenv.config({ path: "./.env" });
 
 const port = process.env.PORT;
-const allowedOrigins = [process.env.CLIENT_URL, '195.201. 26.157']; // Add the additional origin(s) here
+const allowedOrigins = [process.env.CLIENT_URL, process.env.CRONJOB_URL];
 const corsOptions = {
   origin: function (origin, callback) {
     if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
